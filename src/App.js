@@ -4,6 +4,7 @@ import Navbar1 from './components/TopNavbar/Navbar'
 import Hero from './components/Hero/Hero'
 import Temp from './components/TemplateShowCase/Temp'
 import Carousal from './components/Carousal/Carousal'
+import Contact from './components/ContactUsPage/Contact'
 const App = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const App = () => {
     <div className='carousalDiv ' >
     <Carousal/>
     </div>
+    <Contact/>
     </>
   )
 }
