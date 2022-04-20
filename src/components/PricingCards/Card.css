@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+ :root {
+	 --primary: #181d32;
+	 --light-bg: #f7f8fc;
+	 --border: #dae0f5;
+}
+ * {
+	 box-sizing: border-box;
+	 color: var(--primary);
+	 padding: 0;
+	 margin: 0;
+	 font-family: Lato;
+}
+ .container {
+	 display: flex;
+	 min-height: 80vh;
+	 justify-content: center;
+	 align-items: center;
+	 flex-wrap: wrap;
+	 padding:1rem;
+}
+ .card {
+	 text-align: center;
+	 width: 300px;
+	 border-radius: 10px;
+     /* max-height: 600px; */
+	 box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.15);
+}
+ .card__header {
+	 background-color: var(--light-bg);
+	 padding: 2rem;
+}
+ .card__heading {
+	 font-size: 1.3rem;
+	 margin-bottom: 1.25rem;
+}
+ .card__price {
+	 font-weight: 900;
+	 font-size: 2rem;
+}
+ .card__time {
+	 display: block;
+	 font-weight: 400;
+	 font-size: 1rem;
+	 margin-top: 0.5rem;
+}
+ .card__heading, .card__btn button {
+	 font-weight: 600;
+}
+ .card__features {
+	 text-align: left;
+	 padding: 2rem 3rem;
+	 background-color: #fff;
+	 list-style: none;
+}
+ .card__features li {
+	 height: 30px;
+}
+ .card__features li:before {
+	 content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='14px' width='14px' viewBox='0 0 512 512'%3E%3Cpath d='M437.019 74.98C388.667 26.629 324.38 0 256 0 187.619 0 123.331 26.629 74.98 74.98 26.628 123.332 0 187.62 0 256s26.628 132.667 74.98 181.019C123.332 485.371 187.619 512 256 512c68.38 0 132.667-26.629 181.019-74.981C485.371 388.667 512 324.38 512 256s-26.629-132.667-74.981-181.02zM256 482C131.383 482 30 380.617 30 256S131.383 30 256 30s226 101.383 226 226-101.383 226-226 226z'/%3E%3Cpath d='M378.305 173.859c-5.857-5.856-15.355-5.856-21.212.001L224.634 306.319l-69.727-69.727c-5.857-5.857-15.355-5.857-21.213 0-5.858 5.857-5.858 15.355 0 21.213l80.333 80.333a14.953 14.953 0 0010.606 4.393c3.838 0 7.678-1.465 10.606-4.393l143.066-143.066c5.858-5.857 5.858-15.355 0-21.213z'/%3E%3C/svg%3E%0A");
+	 margin-left: -20px;
+	 margin-right: 10px;
+}
+ .card__btn button {
+	 background-color: var(--primary);
+	 border: none;
+	 padding: 10px 30px;
+	 color: white;
+	 margin: 1.25rem 0 0 0;
+	 border-radius: 8px;
+}
+ .card__btn button:active {
+	 transform: scale(0.96);
+}
+ @media (max-width: 663px) {
+	 .container {
+		 padding: 0;
+	}
+	 .card {
+		 width: 80%;
+		 margin-top: 1.5rem;
+	}
+}
+ 

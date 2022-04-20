@@ -5,6 +5,8 @@ import Hero from './components/Hero/Hero'
 import Temp from './components/TemplateShowCase/Temp'
 import Carousal from './components/Carousal/Carousal'
 import Contact from './components/ContactUsPage/Contact'
+import About from './components/AboutUs/About'
+import Card from './components/PricingCards/Card'
 const App = () => {
   return (
     <>
@@ -17,6 +19,8 @@ const App = () => {
     <Carousal/>
     </div>
     <Contact/>
+    <About/>
+    <Card/>
     </>
   )
 }
